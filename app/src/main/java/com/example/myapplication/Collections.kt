@@ -72,7 +72,7 @@ fun ContohMap() {
 
     println()
     println(" === Map === ")
-// Map Read-Only
+    // Map Read-Only
     val readOnlyShape: Map<String, Int> = mapOf("Circle" to 1, "Square" to 2, "Triangle" to 3)
     println(readOnlyShape)
 
@@ -83,4 +83,21 @@ fun ContohMap() {
     // Menambahkan data ke dalam Map Mutable
     shape ["Rectangle"] = 4
     println(shape)
-    }
+
+    // Menghapus data dari Map Mutable
+    shape. remove("Circle")
+    println(shape)
+
+    // Mengubah data di dalam Map Mutable
+    shape ["Square"] = 5
+    println(shape)
+
+    // Map Read-Only
+    val shapesLocked: Map<String, Int> = shape
+    println(shapesLocked)
+}
+fun main() {
+    ContohList()
+    ContohSet()
+    ContohMap()
+}
