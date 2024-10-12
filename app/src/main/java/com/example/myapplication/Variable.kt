@@ -27,9 +27,9 @@ fun main()  {
 
     //string
     var stringValue: String = "Hello,World!"
-    println("String: $stringValue")
+    println(stringValue)
 
-    stringValue = "Hello, kotlin!"
+    stringValue = "Hello, Kotlin!"
     println("String: $stringValue")
 
 }
