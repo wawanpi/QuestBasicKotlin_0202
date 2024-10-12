@@ -7,7 +7,7 @@ package com.example.myapplication
 
 fun ContohList() {
     println("== List ===")
-    //;ist Read-Only
+    //list Read-Only
     val reaOnlyAbjad = listOf("A","B","C")
     println(reaOnlyAbjad)
 
@@ -37,29 +37,29 @@ fun ContohList() {
 // Set Read-Only menggunakan set0f
 // Set Mutable menggunakan mutableSet0f
 
-fun ContohSet () {
+fun ContohSet() {
     println()
     println(" === Set === ")
 
-// Set Read-Only
-    val readOnlyAbjad = set0f("A", "B", "C")
-    println(read0nlyAbjad)
+    // Set Read-Only
+    val readOnlyAbjad = setOf("A", "B", "C")
+    println(readOnlyAbjad)
 
     // Set Mutable
-    val mutableShapes: MutableSet<String> = mutableSetOf("Circle", "Square", "Triangle")
-    println(mutableShapes)
+    val shape: MutableSet<String> = mutableSetOf("Circle", "Square", "Triangle")
+    println(shape)
 
-    // Menambahkan data kedalam Set Mutable
-    mutableShapes.add("Rectangle")
-    println(mutableShapes)
+    // Menambahkan data ke dalam Set Mutable
+    shape.add("Rectangle")
+    println(shape)
 
-    // Menghapus Data Kedalam Set Mutable
+    // Menghapus data dari Set Mutable
     shape.remove("Circle")
     println(shape)
 
-    // Set Read-Only
-    val shapeLocked: Set<String> = mutableShapes
-    println(shapeLocked)
+    // Set Read-Only yang diambil dari set mutable
+    val shapesLocked: Set<String> = shape
+    println(shapesLocked)
 }
 
 // Map adalah Kumpulan data yang disusun dalam pasangan key-value
